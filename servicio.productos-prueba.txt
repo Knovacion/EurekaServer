@@ -1,0 +1,15 @@
+#HTTP Server
+server:
+  port: 2222
+
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /infoProductos
+    health-check-url-path: /healthProductos
+    metadata-map:
+       app-owner: mkroa
+       description: test application 
